@@ -12,6 +12,10 @@ angular.module('learningAngularApp', [
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
+      .when('/about', {
+        templateUrl: 'views/test.html',
+        controller: 'TestCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
